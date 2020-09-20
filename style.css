@@ -1,0 +1,31 @@
+body {
+    background: #318cd4ab;
+}
+.root {
+    display: grid;
+    justify-content: center;
+}
+.container_game {
+    display: grid;
+    width: 100%;
+    max-width: 700px;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, minmax(150px, 1fr));
+}
+.container_game > .square {
+    display: flex;
+    background: #fff;
+    border: 2px solid #318cd4ab;
+    border-radius: 10px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: #576c7d;
+}
+.square.winner {
+    background: #112b40;
+    color: white;
+    border: 1px solid #74b1e2;
+}
